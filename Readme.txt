@@ -1,4 +1,4 @@
-Berikut adalah versi yang lebih sesuai dan kompatibel untuk `README.md` di GitHub:
+Berikut adalah versi `README.md` dengan penggunaan heading yang sesuai untuk GitHub:
 
 ```markdown
 # Proyek Analisis Data: Tren Penyewaan Sepeda – Pengaruh Suhu dan Hari Libur terhadap Pengguna Kasual 🚴‍♂️
@@ -7,17 +7,22 @@ Proyek ini bertujuan untuk menggali faktor-faktor yang mempengaruhi penyewaan se
 
 ## Fitur Utama 🚀
 
-- **Pertanyaan Bisnis**: Fokus pada dua pertanyaan utama:
-  - Apa pengaruh musim terhadap jumlah total pengguna (cnt) sepeda?
-  - Bagaimana pola penggunaan sepeda berdasarkan jam dan bagaimana cuaca mempengaruhi jumlah pengguna pada jam tertentu?
+### Pertanyaan Bisnis
+Fokus pada dua pertanyaan utama:
+- Apa pengaruh musim terhadap jumlah total pengguna (cnt) sepeda?
+- Bagaimana pola penggunaan sepeda berdasarkan jam dan bagaimana cuaca mempengaruhi jumlah pengguna pada jam tertentu?
 
-- **Import Data & Wrangling**: Proses pemuatan, penilaian, dan pembersihan data dilakukan secara bertahap, termasuk penghapusan kolom yang tidak relevan seperti `instant`.
+### Import Data & Wrangling
+Proses pemuatan, penilaian, dan pembersihan data dilakukan secara bertahap, termasuk penghapusan kolom yang tidak relevan seperti `instant`.
 
-- **Exploratory Data Analysis (EDA)**: Menganalisis faktor-faktor yang mempengaruhi penyewaan sepeda, termasuk musim dengan jumlah penyewaan tertinggi, pengaruh suhu terhadap penyewaan harian dan per jam, serta dampak kondisi cuaca terhadap total penyewaan sepeda. Visualisasi menggunakan bar plot, scatter plot, dan line plot membantu mengidentifikasi pola yang relevan.
+### Exploratory Data Analysis (EDA)
+Menganalisis faktor-faktor yang mempengaruhi penyewaan sepeda, termasuk musim dengan jumlah penyewaan tertinggi, pengaruh suhu terhadap penyewaan harian dan per jam, serta dampak kondisi cuaca terhadap total penyewaan sepeda. Visualisasi menggunakan bar plot, scatter plot, dan line plot membantu mengidentifikasi pola yang relevan.
 
-- **Regresi Linear**: Melakukan analisis regresi linear untuk memahami hubungan antara suhu dan jumlah penyewa sepeda harian.
+### Regresi Linear
+Melakukan analisis regresi linear untuk memahami hubungan antara suhu dan jumlah penyewa sepeda harian.
 
-- **Visualisasi Interaktif**: Menggunakan **Streamlit** untuk membuat visualisasi dan analisis interaktif yang memungkinkan eksplorasi data lebih lanjut.
+### Visualisasi Interaktif
+Menggunakan **Streamlit** untuk membuat visualisasi dan analisis interaktif yang memungkinkan eksplorasi data lebih lanjut.
 
 ## Struktur Proyek 📂
 
@@ -89,4 +94,4 @@ Dataset yang digunakan dalam proyek ini adalah:
 - **Seaborn**: Library visualisasi data berbasis matplotlib.
 ```
 
-Dengan struktur ini, file `README.md` sudah siap digunakan dalam repositori GitHub Anda.
+Dengan menggunakan heading yang jelas, format ini akan lebih mudah dibaca dan diikuti dalam repositori GitHub Anda.
