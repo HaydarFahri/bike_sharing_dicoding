@@ -1,3 +1,6 @@
+Berikut adalah versi file `README.md` yang telah diubah agar lebih kompatibel dengan penggunaan di GitHub:
+
+```markdown
 # Proyek Analisis Data: Tren Penyewaan Sepeda – Menilai Pengaruh Suhu dan Hari Libur terhadap Pengguna Kasual 🚴‍♂️
 
 Proyek ini bertujuan untuk menggali faktor-faktor yang mempengaruhi penyewaan sepeda, seperti musim dengan jumlah penyewaan tertinggi, pengaruh suhu terhadap penyewaan harian dan per jam, serta dampak kondisi cuaca pada total penyewaan sepeda. Analisis dilakukan melalui visualisasi bar plot, scatter plot, dan line plot untuk mengidentifikasi pola dan hubungan yang signifikan.
@@ -84,3 +87,6 @@ Dataset yang digunakan dalam proyek ini adalah:
 - **Matplotlib & Seaborn**: Digunakan untuk visualisasi data.
 - **Pandas**: Library untuk analisis dan manipulasi data.
 - **Seaborn**: Library visualisasi data berbasis matplotlib.
+```
+
+Anda dapat menyalin teks di atas ke dalam file `README.md` di repositori GitHub Anda.
