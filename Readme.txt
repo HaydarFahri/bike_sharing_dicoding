@@ -1,97 +1,70 @@
-Berikut adalah versi `README.md` dengan penggunaan heading yang sesuai untuk GitHub:
+Proyek Analisis Data: Tren Penyewaan Sepeda – Mengkaji Pengaruh Suhu dan Hari Libur pada Pengguna Kasual 🚴‍♂️
 
-```markdown
-# Proyek Analisis Data: Tren Penyewaan Sepeda – Pengaruh Suhu dan Hari Libur terhadap Pengguna Kasual 🚴‍♂️
+Proyek ini bertujuan untuk mengeksplorasi faktor-faktor yang memengaruhi penyewaan sepeda, termasuk musim dengan jumlah penyewaan tertinggi, pengaruh suhu terhadap penyewaan harian dan per jam, serta dampak kondisi cuaca terhadap total penyewaan sepeda. Analisis dilakukan melalui visualisasi bar plot, scatter plot, dan line plot untuk mengidentifikasi pola dan hubungan yang signifikan.
 
-Proyek ini bertujuan untuk menggali faktor-faktor yang mempengaruhi penyewaan sepeda, seperti musim dengan jumlah penyewaan tertinggi, pengaruh suhu terhadap penyewaan harian dan per jam, serta dampak kondisi cuaca pada total penyewaan sepeda. Analisis dilakukan melalui visualisasi bar plot, scatter plot, dan line plot untuk mengidentifikasi pola dan hubungan yang signifikan.
+Fitur Utama 🚀
 
-## Fitur Utama 🚀
+Pertanyaan Bisnis
+Proyek ini fokus pada dua pertanyaan utama:
+- Bagaimana pengaruh musim terhadap jumlah total pengguna (cnt) yang menggunakan sepeda?
+- Apa pola penggunaan sepeda berdasarkan jam dalam sehari, dan bagaimana faktor cuaca mempengaruhi jumlah pengguna pada jam-jam tertentu?
 
-### Pertanyaan Bisnis
-Fokus pada dua pertanyaan utama:
-- Apa pengaruh musim terhadap jumlah total pengguna (cnt) sepeda?
-- Bagaimana pola penggunaan sepeda berdasarkan jam dan bagaimana cuaca mempengaruhi jumlah pengguna pada jam tertentu?
+Import Data & Wrangling
+Proses pemuatan, penilaian, dan pembersihan data dilakukan secara bertahap, termasuk penghapusan kolom yang tidak diperlukan seperti `instant`.
 
-### Import Data & Wrangling
-Proses pemuatan, penilaian, dan pembersihan data dilakukan secara bertahap, termasuk penghapusan kolom yang tidak relevan seperti `instant`.
+Exploratory Data Analysis (EDA)
+Bertujuan untuk mengeksplorasi faktor-faktor yang memengaruhi penyewaan sepeda, termasuk musim dengan jumlah penyewaan tertinggi, pengaruh suhu terhadap penyewaan harian dan per jam, serta dampak kondisi cuaca terhadap total penyewaan sepeda. Visualisasi dilakukan menggunakan bar plot, scatter plot, dan line plot untuk mengidentifikasi pola dan hubungan signifikan.
 
-### Exploratory Data Analysis (EDA)
-Menganalisis faktor-faktor yang mempengaruhi penyewaan sepeda, termasuk musim dengan jumlah penyewaan tertinggi, pengaruh suhu terhadap penyewaan harian dan per jam, serta dampak kondisi cuaca terhadap total penyewaan sepeda. Visualisasi menggunakan bar plot, scatter plot, dan line plot membantu mengidentifikasi pola yang relevan.
+Regresi Linear
+Melakukan analisis regresi linear untuk memodelkan hubungan antara suhu dan jumlah penyewa sepeda harian.
 
-### Regresi Linear
-Melakukan analisis regresi linear untuk memahami hubungan antara suhu dan jumlah penyewa sepeda harian.
+Visualisasi Interaktif
+Menggunakan **Streamlit** untuk menghasilkan visualisasi dan analisis interaktif.
 
-### Visualisasi Interaktif
-Menggunakan **Streamlit** untuk membuat visualisasi dan analisis interaktif yang memungkinkan eksplorasi data lebih lanjut.
+Struktur Proyek 📂
 
-## Struktur Proyek 📂
 
-Proyek ini memiliki beberapa file dan direktori sebagai berikut:
+Cara Menjalankan Proyek 💻
 
-```
-notebook.ipynb        # Jupyter Notebook yang berisi analisis mendalam terkait tren penyewaan sepeda
-data/                 # Direktori yang berisi dataset penyewaan sepeda
-  ├── day.csv         # Dataset penyewaan sepeda harian
-  └── hour.csv        # Dataset penyewaan sepeda per jam
-dashboard.py          # Skrip Python untuk menjalankan dashboard interaktif menggunakan Streamlit
-README.md             # Dokumentasi proyek ini
-requirements.txt      # Daftar pustaka Python yang diperlukan untuk menjalankan proyek ini
-```
-
-## Cara Menjalankan Proyek 💻
-
-### 1. Menjalankan Jupyter Notebook
-
+1. Menjalankan Jupyter Notebook
 Untuk menjalankan analisis di **Jupyter Notebook**:
-
-1. Instal semua dependensi menggunakan perintah berikut:
+1. Pastikan semua dependensi sudah terpasang dengan perintah berikut:
    ```bash
    pip install -r requirements.txt
-   ```
-2. Jalankan Jupyter Notebook:
-   ```bash
-   jupyter notebook notebook.ipynb
-   ```
+Jalankan Jupyter Notebook:
 
-### 2. Menjalankan Dashboard Streamlit
+bash
+Copy code
+jupyter notebook notebook.ipynb
+Menjalankan Dasbor Streamlit Proyek ini juga menyediakan dashboard interaktif menggunakan Streamlit. Ikuti langkah berikut untuk menjalankannya:
 
-Proyek ini juga menyediakan dashboard interaktif menggunakan **Streamlit**. Untuk menjalankannya, ikuti langkah-langkah berikut:
+Instal semua dependensi menggunakan:
 
-1. Instal semua dependensi dengan:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Jalankan aplikasi **Streamlit**:
-   ```bash
-   streamlit run dashboard.py
-   ```
+bash
+Copy code
+pip install -r requirements.txt
+Jalankan aplikasi Streamlit:
 
-## Insight Utama 📊
+bash
+Copy code
+streamlit run dashboard.py
+Insight Utama 📊
 
-### 1. Pengaruh Musim terhadap Jumlah Pengguna Sepeda (cnt)
-- Analisis menunjukkan bahwa musim memiliki pengaruh signifikan pada jumlah penyewa sepeda. **Musim panas** mencatat jumlah penyewa tertinggi, dengan aktivitas penyewaan yang tinggi pada hari-hari cerah dan hangat, mencerminkan minat masyarakat untuk berolahraga atau bersantai di luar ruangan.
-- **Musim semi** juga menunjukkan jumlah penyewa yang cukup tinggi.
-- **Musim gugur** mengalami penurunan penyewa dibandingkan dua musim sebelumnya, meskipun tetap ada tingkat penyewaan yang layak.
-- **Musim dingin** mencatatkan jumlah penyewa terendah, karena suhu yang sangat dingin dan kondisi cuaca yang tidak nyaman membuat orang memilih moda transportasi lain.
+Bagaimana Pengaruh Musim terhadap Jumlah Total Pengguna (cnt) yang Menggunakan Sepeda?
+Analisis menunjukkan bahwa musim memiliki dampak signifikan terhadap jumlah penyewa sepeda. Musim panas mencatatkan jumlah penyewa tertinggi, dengan aktivitas penyewaan yang sangat tinggi pada hari-hari cerah dan hangat. Hal ini menunjukkan meningkatnya minat masyarakat untuk berolahraga dan bersantai di luar ruangan selama cuaca yang baik.
+Musim semi juga menunjukkan rata-rata jumlah penyewa yang cukup tinggi.
+Musim gugur mencatatkan penurunan jumlah penyewa dibandingkan dengan dua musim sebelumnya, namun tetap mempertahankan tingkat penyewaan yang layak.
+Sebaliknya, musim dingin mencatat jumlah pengguna terendah. Suhu yang sangat dingin, kemungkinan salju, dan kondisi cuaca yang tidak nyaman membuat orang lebih memilih moda transportasi lain.
+Apa Pola Penggunaan Sepeda Berdasarkan Jam dalam Sehari, dan Bagaimana Faktor Cuaca Mempengaruhi Jumlah Pengguna pada Jam-jam Tertentu?
+Analisis pola penggunaan sepeda berdasarkan jam dalam sehari menunjukkan bahwa jam-jam sibuk terjadi terutama antara pagi dan sore. Peningkatan signifikan dalam jumlah penyewa pada jam-jam ini konsisten dengan pola aktivitas harian masyarakat, di mana banyak orang menggunakan sepeda untuk pergi bekerja, sekolah, atau aktivitas luar ruangan lainnya.
+Jam puncak pagi dan sore mencerminkan pola perjalanan umum, di mana pengguna lebih cenderung menyewa sepeda saat menuju atau pulang dari pekerjaan. Analisis ini penting untuk memahami kapan permintaan penyewaan sepeda berada di puncaknya.
+Dataset Dataset yang digunakan dalam proyek ini adalah:
 
-### 2. Pola Penggunaan Sepeda Berdasarkan Jam dan Pengaruh Cuaca
-- Analisis pola penggunaan sepeda berdasarkan jam dalam sehari menunjukkan puncak penggunaan antara pagi dan sore hari. Hal ini sejalan dengan aktivitas harian masyarakat, di mana sepeda digunakan untuk pergi bekerja, sekolah, atau aktivitas luar ruangan lainnya.
-- Jam puncak pagi dan sore mencerminkan pola perjalanan umum, di mana pengguna cenderung menyewa sepeda saat berangkat atau pulang kerja. Analisis ini sangat berguna untuk memahami kapan permintaan penyewaan sepeda mencapai puncaknya.
+day.csv: Dataset harian yang mencatat data penyewaan sepeda termasuk informasi tentang suhu, kondisi cuaca, dan status hari libur.
+hour.csv: Dataset per jam yang mencatat data penyewaan sepeda per jam, memberikan detail yang lebih spesifik terkait waktu.
+Library yang Digunakan
 
-## Dataset
-
-Dataset yang digunakan dalam proyek ini adalah:
-
-- **day.csv**: Dataset penyewaan sepeda harian, mencakup informasi suhu, kondisi cuaca, dan status hari libur.
-- **hour.csv**: Dataset penyewaan sepeda per jam, memberikan informasi yang lebih spesifik mengenai waktu penyewaan.
-
-## Library yang Digunakan
-
-- **Python**: Bahasa pemrograman utama untuk analisis dan visualisasi data.
-- **Streamlit**: Library untuk membuat aplikasi web interaktif.
-- **Matplotlib & Seaborn**: Digunakan untuk visualisasi data.
-- **Pandas**: Library untuk analisis dan manipulasi data.
-- **Seaborn**: Library visualisasi data berbasis matplotlib.
-```
-
-Dengan menggunakan heading yang jelas, format ini akan lebih mudah dibaca dan diikuti dalam repositori GitHub Anda.
+Python: Bahasa pemrograman yang digunakan untuk analisis dan visualisasi data.
+Streamlit: Library Python untuk membuat aplikasi web interaktif.
+Matplotlib & Seaborn: Digunakan untuk visualisasi data.
+Pandas: Pustaka sumber terbuka yang digunakan untuk analisis dan manipulasi data.
